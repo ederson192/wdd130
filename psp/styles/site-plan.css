@@ -5,7 +5,7 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #FFFFFF   ;
+  --primary-color: #FFFFFF;
   --secondary-color: #00171F ;
   --accent1-color: #003459;
   --accent2-color: #007EA7;
@@ -15,7 +15,7 @@ Fonts are separated by a | */
   --paragraph-font: "Light 300 Italic";
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-white: #396E94;  /* headline on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
