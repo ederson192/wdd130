@@ -286,6 +286,10 @@ main#main-get > section  {
     
 }
 
+.main-get-2 {
+    margin-top: 40px;
+}
+
 main#main-get > section > section {
     height: fit-content;
 }
