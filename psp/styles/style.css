@@ -29,7 +29,7 @@ a {
 header {
     display: grid;
     grid-template-columns: 15% 20% 30% 35%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
@@ -75,7 +75,7 @@ header a img.logo {
 header h2 {
     grid-column: 2 / 3;
     padding-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 header nav {
@@ -149,35 +149,54 @@ main#home-main {
 
 div.main-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     margin: 150px auto 100px;
     width: 90%;
     max-width: 1200px;
-    max-height: 600px;
+    height: 600px;
 }
 
-.main-project {
+div.main-info > section.main-project {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% auto;
+    height: 600px;
     text-align: center;
 }
 
+.main-info img.imagen1 {
+    grid-row: 1 / 2;
+    justify-self: center;
+}
+
+
 .main-project img {
-    width: 75%;
+    height: 95%;
+    object-fit: cover;
 }
 
 .main-project h5 {
+    padding: 2rem 0;
     font-size: 1.3rem;
+}
+
+.main-project p {
+    padding: 0 3rem;
 }
 
 .main-updates{
     display: grid;
-    place-content: center;
     padding: 20px 40px;
-    text-align: center;
     background-color: var(--accent-1);
 }
 
 .main-updates h2 {
-    margin: 20px auto 30px;
+    margin: 20px auto 50px;
+    text-align: center;
+}
+
+.main-updates ul {
+    text-align: left;
 }
 
 
@@ -199,6 +218,10 @@ main#main-about {
 main#main-about h1{
     grid-area: a;
     text-align: center;
+}
+
+main#main-about p {
+    text-align: justify;
 }
 
 main#main-about img{
